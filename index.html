@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2 class="title">Daily Expense Tracker</h2>
+
+    <button id="fab">+</button>
+
+    <div class="total-display">
+        Total: ₹<span id="totalAmount">0</span>
+    </div>
+</header>
+
+<main>
+    <ul id="expenseList"></ul>
+</main>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+
+        <h3>Add Expense</h3>
+
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+
+        <select id="expenseCategory">
+            <option value="">Select Category</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Bills</option>
+        </select>
+
+        <button id="addBtn">Add Expense</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
