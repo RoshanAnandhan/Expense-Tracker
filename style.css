@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* Header layout */
+header {
+    position: relative;
+    padding: 15px 25px 45px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Center title */
+.title {
+    text-align: center;
+    margin: 0;
+}
+
+/* Add button top-right */
+#fab {
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+#fab:hover {
+    transform: scale(1.1);
+}
+
+/* Total bottom-right */
+.total-display {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+#closeModal {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
+}
